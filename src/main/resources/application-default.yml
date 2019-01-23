@@ -1,0 +1,17 @@
+management:
+   security:
+      enabled: false
+
+server:
+  port: 9080
+
+logging:
+   config: 'classpath:logback-spring.xml'
+   level:
+      root: INFO
+      org.springframework: INFO
+      com.akhilesh: INFO
+      org.springframework.boot.autoconfigure.security: ERROR
+      org.springframework.security : ERROR
+      com.netflix.eureka: OFF
+      com.netflix.discovery: OFF
